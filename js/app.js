@@ -19,8 +19,8 @@ $.ajax({
 	  		cards  +=  `<li class="card" id="${i++}">
 	  		 			<img class ="image" src="${users[index].picture.large}"> 
 	  		 			 <div class="info">
-			  		 		<p class= "fullName propper-noun"><i>${users[index].name.first} ${users[index].name.last}</i></p>
-			  		 		<p ><i>${users[index].login.username}</i></p>
+			  		 		<p class= "fullName propper-noun"><i>${users[index].name.first} ${users[index].name.last}</i></p>			  		 		
+							<p><i>${users[index].email}</i></p>
 		  		 			<p class="propper-noun">${users[index].location.city}, ${users[index].nat}</p>
 		  		 		 </div>
 		  		 	    </li>`;	

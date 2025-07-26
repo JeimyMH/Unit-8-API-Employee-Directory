@@ -10,7 +10,7 @@ $.ajax({
   		var cards = `<ul id="users" style="list-style: none;">
   					<div id="header">
   						<h2>AWESOME STARTUP EMPLOYEE DIRECTORY</h2>
-  						<input id="searchBar" type="text" class="form-control col-md-2" name="searchBox" placeholder="Filter by name or username...">
+  						<input id="searchBar" type="text" class="form-control col-md-2" name="searchBox" placeholder="Search by name...">
   					</div>`;
   		var i = 0;
 
@@ -148,7 +148,7 @@ $.ajax({
 
 		        if ((seachItemsName.innerHTML.toLowerCase().indexOf(filter) > -1) || (seachItemsUser.innerHTML.toLowerCase().indexOf(filter) > -1)) {
 		            li[i].style.display = "";
-					
+
 		        } else {
 		            li[i].style.display = "none";
 		        }

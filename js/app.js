@@ -47,12 +47,14 @@ $.ajax({
 							<hr>
 							<p>${users[cardToShow].phone}</p>
 							<div id="address">
-								<p class="propper-noun">${users[cardToShow].location.street}</p>
+								<p class="propper-noun">${users[cardToShow].location.street.number}</p>
+								<p class="propper-noun">${users[cardToShow].location.street.name}</p>
 								<p class="propper-noun">${users[cardToShow].location.city}</p>
 								<p class="propper-noun">${users[cardToShow].location.state}</p> 
-								<p>${users[cardToShow].location.postcode}</p>		 						
+								<p class="propper-noun">${users[cardToShow].location.postcode}</p>		 						
 							</div>
-							<p>Birthday: ${users[cardToShow].dob}</p>
+							<p>Birthday: ${users[cardToShow].dob.date}</p>
+							<p>Age: ${users[cardToShow].dob.age}</p>
 							<div id="arrows">
 								<a href="#" class="fa prev" id="prev" >&#xf060;</a>&nbsp&nbsp&nbsp<a href="#"  class="fa next" id="next">&#xf061;</a>	
 							</div>	  
